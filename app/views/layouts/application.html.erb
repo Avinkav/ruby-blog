@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Ruby Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-dark">
+  <div class="container">
+  <a class="navbar-brand" href="/">
+  Fake Blog yo
+  </a>
+  </div>
+  </header>
+  <div class="container py-3">
+    <h1>My Fake Blog</h1>
+    <p class="lead">This blog has absolutely no purpose except for me to learn ruby on rails</p> 
+    <%= yield %>
+    </div>
+  </body>
+</html>
